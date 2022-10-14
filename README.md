@@ -1,4 +1,4 @@
-# Tiramisu Recipe (ongoing task)
+# Tiramisu Recipe (flex-responsive)
 
 ### Rreth Detyrës
 
@@ -7,16 +7,16 @@ Detyra në kuadër të këtij punimi është vënia në praktikë e njohurive t�
 ### Njohuritë e praktikuara deri më tani:
 
 - HTML (Tags Links, Lists, Tabels, Images, Forms, Inputs, iFrame (video), Audio, Fields, etc...)
-- CSS ( Selectors, Colors, Fonts, Borders, Paddings, Margins, Positioning elements, Transitions, etc... )
+- CSS ( Selectors, Colors, Fonts, Borders, Paddings, Margins, Positioning elements, Transitions, Animations, Icons, Flex, @media(responsive), etc... )
 - Md.(Markdown)files
 
 
 ### Teknologjitë e përdorura
 Për realizimin e kësaj detyre janë përdorur:
 
- - Html5
+ - HTML5
  - Git
- - Css
+ - CSS3
  - GitHub
 
 ### Konfigurimet e nevojshme
