@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tiramisu-FLEX</title>
+    <style>
+    
+       /* mobile 0 - 480px */         
+    @media  (max-width: 480px) {
+        .main {width: 240px;}
+        .header {display: grid;}
+        .header p { justify-self: right;}
+        .ul-container {
+            height: 480px;
+        }
+        .ul-ul {
+            width: 200px;
+            height: 370px;
+            overflow: scroll;
+            padding-left: ;
+        }
+        .ul-image {
+            margin-bottom: 0px;
+            justify-content:end;
+            margin: auto;
+            padding-bottom: 0px;
+            padding-top: 370px;
+        }
+        .ul-image img { 
+            width: 200px ;
+            height: 130px;
+        }
+        .img-3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .img-3 img {
+            width: 190px;
+            margin-bottom:5px;
+        }
+        iframe {
+            width: 165px;
+            height: 140px;
+        }
+        .audio { 
+            padding-left: 5px;
+        }
+        .audio audio {
+            height: 50px;
+            width: 200px;
+        }
+        h1 {
+            letter-spacing: 3px;
+        }
+        @keyframes h1 {
+        0% { text-shadow: 5px 5px 10px rgb(60, 34, 34);
+                font-size: 23px; }
+        25% { text-shadow: 5px 5px 10px rgb(206, 16, 16);
+                font-size: 31px;}
+        50% { text-shadow: 5px 5px 10px rgb(60, 34, 34);  
+                font-size: 23px;}
+        75% { text-shadow: 5px 5px 10px rgb(206, 16, 16);
+                font-size: 31px;}
+        100% { text-shadow: 5px 5px 10px rgb(60, 34, 34);
+                font-size: 23px;
+            }
+    }
+        header h1 {
+            animation-name: h1;
+            animation-duration: 4s;
+            animation-delay: -3s;
+            animation-iteration-count: infinite;
+        
+    }
+}
+
+       /* tablet 480px - 899px */
+    @media  (min-width: 481px) {
+        .main {width: 480px;}
+        .header { display: grid;}
+        .header p { justify-self: right; }
+        /*.header p {padding-left:310px;}*/
+        .ul-container {
+            height: 520px;
+        }
+        .ul-ul {
+            width: 430px;
+            height: 290px;
+        }
+        .ul-image {
+            margin-bottom: 0px;
+            justify-content:end;
+            margin: auto;
+            padding-bottom: 0px;
+            padding-top: 280px;
+        }
+        .img-3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .img-3 img {
+            width: 300px;
+            margin-bottom:5px;
+        }
+        iframe {
+        width: 350px;
+        height: 250px;
+        }
+        .audio { 
+            padding-left: 80px;
+        }
+        @keyframes h1 {
+        0% { text-shadow: 5px 5px 10px rgb(60, 34, 34);
+                font-size: 50px; }
+        25% { text-shadow: 5px 5px 10px rgb(206, 16, 16);
+                font-size: 58px;}
+        50% { text-shadow: 5px 5px 10px rgb(60, 34, 34);  
+                font-size: 50px;}
+        75% { text-shadow: 5px 5px 10px rgb(206, 16, 16);
+                font-size: 58px;}
+        100% { text-shadow: 5px 5px 10px rgb(60, 34, 34);
+                font-size: 50px; }
+        }
+        header h1 {
+        animation-name: h1;
+        animation-duration: 4s;
+        animation-delay: -3s;
+        animation-iteration-count: infinite;
+        }
+}
+
+       /* laptop 900px - 1199px */
+    @media  (min-width: 900px) {
+        .main {width: 900px; }
+        .header {
+            display: grid;
+        }
+        .header p {
+            justify-self: right;
+        }
+        .ul-container {
+            height: 270px;
+        }
+        .ul-ul {
+            width: 550px;
+            height: 265px;
+            transform: skew(-1deg, 1.5deg);
+        }
+        .ul-image {
+            justify-content: center;
+            margin-right: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 0px;
+            height: 225px;
+        }
+        .ul-image img {
+            
+        }
+        .img-3 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .audio { 
+            padding-left: 300px;
+        }
+        iframe {
+            width: 650px;
+            height: 350px;
+            padding-left: 55%;
+        }
+
+        @keyframes h1 {
+        0% { text-shadow: 5px 5px 10px rgb(60, 34, 34);
+                font-size: 50px; }
+        25% { text-shadow: 5px 5px 10px rgb(206, 16, 16);
+                font-size: 58px;}
+        50% { text-shadow: 5px 5px 10px rgb(60, 34, 34);  
+                font-size: 50px;}
+        75% { text-shadow: 5px 5px 10px rgb(206, 16, 16);
+                font-size: 58px;}
+        100% { text-shadow: 5px 5px 10px rgb(60, 34, 34);
+                font-size: 50px; }
+        }
+        header h1 {
+        animation-name: h1;
+        animation-duration: 4s;
+        animation-delay: -3s;
+        animation-iteration-count: infinite;
+        }
+    }
+
+       /* monitor 1200px - ul. */
+    @media  (min-width: 1200px) {
+        .main {width: 1200px; }
+        .header {
+            display: grid;
+        }
+        .header p {
+            justify-self: right;
+        }
+        .ul-container {display: flex;
+        }
+        .ul-ul { 
+            width: 750px;
+            height: 260px;
+            transform: skew(-2deg, 1deg);
+        }
+        .ul-image { 
+            width:400px;
+            justify-content: end;
+            margin-right: 40px;
+        }
+        .ul-image img { 
+            width: 450px ;
+            height: 235px;
+        }
+        .audio { 
+            padding-left: 400px;
+        }
+        .img-3 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .img-3 img {
+            width: 370px;
+            height: 100%;
+        }
+        iframe {
+            width: 850px;
+            height: 400px;
+            padding-left: 50%;
+        }
+
+        @keyframes h1 {
+        0% { text-shadow: 5px 5px 10px rgb(60, 34, 34);
+                font-size: 50px; }
+        25% { text-shadow: 5px 5px 10px rgb(206, 16, 16);
+                font-size: 58px;}
+        50% { text-shadow: 5px 5px 10px rgb(60, 34, 34);  
+                font-size: 50px;}
+        75% { text-shadow: 5px 5px 10px rgb(206, 16, 16);
+                font-size: 58px;}
+        100% { text-shadow: 5px 5px 10px rgb(60, 34, 34);
+                font-size: 50px; }
+        }
+        header h1 {
+        animation-name: h1;
+        animation-duration: 4s;
+        animation-delay: -3s;
+        animation-iteration-count: infinite;
+        }
+    }
+    
+    </style>
+</head>
+
+<body>
+
+<main class="main">   <!-- Main Content -->
+    
+
+    <header class="header">    <!-- Header -->
+        <h1>Tiramisu</h1>
+        <p><a class="order" href="orderform.html" target="_blank">Order Now</a></p>
+    </header>
+
+    <section class="first-section">     <!-- Section -->
+        <p>Posted on <em>June 13, 2019 /</em>  posted in <a href="#">No-Bake Recipes</a></p>
+    </section>
+
+    <section class="content">     <!-- Content -->
+        <div class="img-3">
+        <img src="/assets/images/s1.jpg" alt="tiramisu1" width="33%" title="tiramisu1">
+        <img src="/assets/images/s2.jpg" alt="tiramisu2" width="33%" title="tiramisu2">
+        <img src="/assets/images/s3.jpg" alt="tiramisu3" width="33%" title="tiramisu3">
+        </div>
+        <p> <strong>Tiramisu</strong> is a timeless no-bake Italian dessert combining espresso-dipped ladyfingers and a creamy lightly sweetened mascarpone cream. This recipe is from the late Maida Heatter and is easily the best homemade tiramisu recipe that I’ve ever tried.</p>
+
+        <p>A couple months ago, I was sent a new cookbook called Happiness is Baking. This cookbook includes Maida Heatter’s favorite recipes with the foreword written by Dorie Greenspan. I, unsurprisingly, immediately fell in love with my newest cookbook. It’s a collection of 100 foolproof and classic desserts including cookies, cakes, muffins, pies, tarts, and more that range from simple everyday cookies to outrageously indulgent chocolate soufflé cake.</p>
+        
+        <div class="audio">
+        <p><b>How to pronounce Tiramisu Correctly?</b></p>
+        <audio controls src="audio/How to Pronounce Tiramisù_ (CORRECTLY).mp3" type="audio/mp3">How to Pronounce Tiramisu Correctly?</audio><br<br><br><br><br><br<br><br><br>
+        </div>
+
+        <div class="ul-container">
+
+        <div class="ul-ul"><h3><strong>Ingredients</strong></h3>
+        <ul>
+            <li> 1 and 1/4 cups(300ml) very strongly prepared espresso, warm or room temperature</li>
+            <li> 6 Tablespoons (90ml) Grand Marnier*</li>
+            <li> 40-45 ladyfingers*</li>
+            <li> 16 ounces (about 2 cups; 450g) mascarpone, cold or at room temperature</li>
+            <li> 1/4 cup (60ml) dark rum </li>
+            <li> 4 large pasteurized eggs, separated*</li>
+            <li>1/2 cup (100g) granulated sugar, divided*</li>
+            <li>2 cups (480ml) heavy cream or heavy whipping cream</li>
+            <li>1/2 teaspoon pure vanilla extract</li>
+            <li>1/8 teaspoon salt</li>
+            <li>unsweetened natural or dutch-process cocoa powder</li>
+        </ul>
+        </div>
+
+        <div class="ul-image"><img src="/assets/images/tiramisu.jpg" width="340px" height="100%"></div>
+        </div><br<br<br><br>
+
+        <p>For those not familiar, Maida Heatter is an icon, especially in the baking world. Dubbed the Queen of Cake, her expansive culinary career included 9 cookbooks, recipes for the Times, a restaurant, and three James Beard Awards. Baker and author Dorie Greenspan once said <q>Whenever someone tells me they want to learn to bake, I tell them to start with Maida Heatter’s books. That’s what I did.</q> This latest cookbook is a testament to Maida’s legacy. She passed away only 2 months after this book was published. She leaves behind an incalculable amount of inspiration to bakers and cooks all over the world.<br><br></p><br><br>
+
+        <h3>Common Tiramisu Questions - Answered</h3>
+        <dl>
+            <dt><strong>What kind of rum do I use in tiramisu?</strong>
+                <dd>Dark rum is best, but you can use brandy or your favorite coffe liqueur.</dd>
+            </dt><br>
+            <dt><strong>Egg whites or whipped cream?</strong>
+                <dd>Most tiramisu recipes use whipped egg whites OR whipped cream in the mascarpone cream layers. Egg whites contribute a more airy texture, while whipped cream makes the filling a bit more rich. This recipe actually uses both, so you’re getting both delightful textures.</dd>
+            </dt><br>
+            <dt><strong>Are the eggs cooked?</strong>
+                <dd>Tiramisu is a no-bake dessert. The egg yolks are gently cooked on the stovetop, but the egg whites are raw. Purchase pasteurized eggs because they are safe to consume raw.</dd>
+            </dt><br>
+            <dt><strong>What size pan to use?</strong>
+                <dd>This particular tiramisu recipe yields a large volume and the pan will be very full. Make sure your pan is large enough. I recommend a 9×13 inch dish with at least a 12-14 cup capacity. This 4 quart dish is wonderful too.</dd><br><br>
+            </dt>
+        </dl>
+
+        <p><b>How it's made Tiramisu?</b></p><iframe  width="80%" height="360px" src="https://www.youtube.com/embed/PZoeGbuseGg" title="How it's made tiramisu cake" frameborder="0" allowfullscreen style="padding-left:10%;"></iframe><br><br>
+
+        <p align="center" style="font-size:20px;"><a href="#top"><i class="fa-solid fa-house h-h" title="Back Home"></i></a></p>
+        <br><br>
+
+    </section>
+
+    <footer class="footer">       <!-- Footer -->
+        <h3>Fatlum Llumnica</h3>
+        <p> Copyright &copy</p>
+    </footer>
+
+    
+
+
+</main>
+
+
+</body>
+</html>
