@@ -82,6 +82,32 @@ body {
      /*width: 340px; ---- is specified to img */
     /*height: 100%; ---- is specified to img */
 }
+p i {  
+    font-size:30px;            /* icona order edhe home */
+    color: rgb(23, 102, 176);
+}  
+p i {          /* ------ icons animations ------- */
+    animation: shake 0.8s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+}
+
+@keyframes shake {
+    0%, 10%, 70% {
+    transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+    transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+    }
+    40%, 60% {
+    transform: translate3d(4px, 0, 0);
+    }
+}
+
 
 
 /* ---------------------   FORMS CSS   -------------------- */
@@ -135,8 +161,10 @@ input, textarea {
     margin-top: 20px;
     border: 2px solid rgb(139, 139, 152);
     border-radius: 20px;
-    background-color: rgb(96, 116, 118);
+    background-image: url('/assets/images/tiramisu.jpg');
     box-shadow: 20px 10px 10px grey;
+    opacity: 0.9;
+    
 }
 .fieldset1, .fieldset2 {
     transform: skew(-2deg, 0deg);
@@ -219,6 +247,8 @@ h1 { font-family: 'bakery-h';
     h1 {
         letter-spacing: 3px;
     }
+    p i { font-size:20px;}  /* icona order edhe home */
+
     @keyframes h1 {
     0% { text-shadow: 5px 5px 10px rgb(60, 34, 34);
             font-size: 23px; }
@@ -231,14 +261,13 @@ h1 { font-family: 'bakery-h';
     100% { text-shadow: 5px 5px 10px rgb(60, 34, 34);
             font-size: 23px;
         }
-}
+    }
     header h1 {
         animation-name: h1;
         animation-duration: 4s;
         animation-delay: -3s;
         animation-iteration-count: infinite;
-    
-}
+    }
 }
 
 /* ---------- tablet 480px - 899px -----------*/
@@ -278,6 +307,7 @@ h1 { font-family: 'bakery-h';
     .audio { 
         padding-left: 80px;
     }
+    
     @keyframes h1 {
     0% { text-shadow: 5px 5px 10px rgb(60, 34, 34);
             font-size: 50px; }
@@ -347,6 +377,7 @@ h1 { font-family: 'bakery-h';
         height: 350px;
         padding-left: 55%;
     }
+    .fa-cart-shopping { padding-right: 20px;}
 
     @keyframes h1 {
     0% { text-shadow: 5px 5px 10px rgb(60, 34, 34);
@@ -411,6 +442,7 @@ h1 { font-family: 'bakery-h';
         height: 400px;
         padding-left: 50%;
     }
+    .fa-cart-shopping { padding-right: 30px;}
 
     @keyframes h1 {
     0% { text-shadow: 5px 5px 10px rgb(60, 34, 34);
