@@ -1,47 +1,35 @@
+
 body {
     background-color: #bfd1d3;
 }
 .main {
     display: flex;
     flex-direction: column;
-    
     /*width: 900px;*/
     margin:auto;
     box-shadow: 0px 0px 10px 10px #dee5e6;
-    
-
-    
 }
-
 .header, .first-section, .content, .footer {
-/* border: 1px solid red;*/
+    /* border: 1px solid red;*/
     padding: 20px;
     margin: 0px;
     /*border: 1px solid rgb(179, 90, 90);*/
     background-color: #dee5e6;
 }
-
 .header {
     color: black;
     padding: 0px 20px 60px 20px;
-/* display: grid;
+    /* display: grid;
     grid-template-columns: 5fr 1fr;*/
 }
-
 .header p, .header h1 {
     display:inline-block;
+    position: absolute;
 }
-
 .header p {
     /* padding-left:730px;*/
     padding-right: 0px;
-    display: inline-block;
-    position: absolute;
 }
-.header h1 {
-    position: absolute;
-}
-
 .first-section {
     color: black;
     height: 30px;
@@ -53,25 +41,21 @@ body {
 .content {
     color: black;
 }
-
 .img-3 img {
     border-radius: 10px;
 }
-
 .footer {
     color: black;
     text-align: center;
     padding: 0px;
 }
-
 .ul-container {
     display: flex;
     padding: 0px;
     height: 280px; 
     margin: 0;
-   /* border: 1px solid red;*/
+    /* border: 1px solid red;*/
 }
-
 .ul-ul { 
     z-index: 1;
     width: 38%;
@@ -83,7 +67,6 @@ body {
     border-radius: 10px;
     position: absolute;
 }
-
 .ul-image {
     position: relative;
     margin: auto;
@@ -93,7 +76,6 @@ body {
     border-radius: 10px;
     justify-content: center;
 }
-
 .ul-image img {
     border-radius: 10px;
     display: block;
@@ -102,10 +84,7 @@ body {
 }
 
 
-
-
-
-
+/* ---------------------   FORMS CSS   -------------------- */
 
 div button, div input {
     color: blue;
@@ -120,20 +99,16 @@ div button, div input {
 div input {
     background-color: rgb(220, 240, 245);
     box-shadow: 5px 5px 5px  rgb(60, 60, 60);
-    
 }
-
 div p a:hover {
     font-size: 30px;
     transition: 0.6s;
 }
-
 div button:hover, div input:hover {
     font-size: 25px;
     border: 1px solid black;
     transition: 0.5s;
 }
-
 legend {
     color: black(5, 5, 20, 0.804);
     font-weight: bold;
@@ -142,25 +117,20 @@ legend {
     border-radius: 5px;
     box-shadow: 5px 5px 5px  rgb(60, 60, 60);
 }
-
 label {
     font-weight: bold;
 }
-
 a {
     font-weight: bold;
 }
-
 .order:hover {
     font-size: 25px;
     transition: 0.6s;
 }
-
 input, textarea {
     border-radius: 5px;
     padding: 5px;
 }
-
 .main-fieldset {
     margin-top: 20px;
     border: 2px solid rgb(139, 139, 152);
@@ -168,7 +138,6 @@ input, textarea {
     background-color: rgb(96, 116, 118);
     box-shadow: 20px 10px 10px grey;
 }
-
 .fieldset1, .fieldset2 {
     transform: skew(-2deg, 0deg);
     margin-left: 5px;
@@ -179,22 +148,19 @@ input, textarea {
     box-shadow: 5px 5px 10px powderblue;
 }
 
+/* ------------------   TIRAMISU HEADER CSS ----------------- */
+
 @font-face {
     font-family: 'bakery-h';
     src: url(/assets/fonts/RemachineScript_Personal_Use.ttf);
-
 }
-
 h1 { font-family: 'bakery-h';
     font-weight: bold;
     letter-spacing: 10px;
     font-size: 50px;
     text-shadow: 5px 5px 10px rgb(60, 34, 34);
     margin: 10px 0px 5px 0px;
-    
 }
-
-
 .fixed {
     position: fixed;
     top: 0px;
@@ -202,10 +168,266 @@ h1 { font-family: 'bakery-h';
 }
 
 
+/* ------------------  MEDIA QUERIES CUSTOMIZATIONS  --------------------------------- */
 
-/*.h-h:hover{
-    font-size: 40px;
-    transition: 5s;
+    /* ---------- mobile 0 - 480px  ----------*/  
+    
+    @media screen and (max-width: 480px) {
+    .main {width: 240px;}
+    .header {display: grid;}
+    .header p { justify-self: right;}
+    .ul-container {
+        height: 480px;
+    }
+    .ul-ul {
+        width: 200px;
+        height: 370px;
+        overflow: scroll;
+        padding-left: ;
+    }
+    .ul-image {
+        margin-bottom: 0px;
+        justify-content:end;
+        margin: auto;
+        padding-bottom: 0px;
+        padding-top: 370px;
+    }
+    .ul-image img { 
+        width: 200px ;
+        height: 130px;
+    }
+    .img-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-3 img {
+        width: 190px;
+        margin-bottom:5px;
+    }
+    iframe {
+        width: 165px;
+        height: 140px;
+    }
+    .audio { 
+        padding-left: 5px;
+    }
+    .audio audio {
+        height: 50px;
+        width: 200px;
+    }
+    h1 {
+        letter-spacing: 3px;
+    }
+    @keyframes h1 {
+    0% { text-shadow: 5px 5px 10px rgb(60, 34, 34);
+            font-size: 23px; }
+    25% { text-shadow: 5px 5px 10px rgb(206, 16, 16);
+            font-size: 31px;}
+    50% { text-shadow: 5px 5px 10px rgb(60, 34, 34);  
+            font-size: 23px;}
+    75% { text-shadow: 5px 5px 10px rgb(206, 16, 16);
+            font-size: 31px;}
+    100% { text-shadow: 5px 5px 10px rgb(60, 34, 34);
+            font-size: 23px;
+        }
 }
-*/
+    header h1 {
+        animation-name: h1;
+        animation-duration: 4s;
+        animation-delay: -3s;
+        animation-iteration-count: infinite;
+    
+}
+}
 
+/* ---------- tablet 480px - 899px -----------*/
+
+@media screen and  (min-width: 481px) {
+    .main {width: 480px;}
+    .header { display: grid;}
+    .header p { justify-self: right; }
+    /*.header p {padding-left:310px;}*/
+    .ul-container {
+        height: 520px;
+    }
+    .ul-ul {
+        width: 430px;
+        height: 290px;
+    }
+    .ul-image {
+        margin-bottom: 0px;
+        justify-content:end;
+        margin: auto;
+        padding-bottom: 0px;
+        padding-top: 280px;
+    }
+    .img-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-3 img {
+        width: 300px;
+        margin-bottom:5px;
+    }
+    iframe {
+    width: 350px;
+    height: 250px;
+    }
+    .audio { 
+        padding-left: 80px;
+    }
+    @keyframes h1 {
+    0% { text-shadow: 5px 5px 10px rgb(60, 34, 34);
+            font-size: 50px; }
+    25% { text-shadow: 5px 5px 10px rgb(206, 16, 16);
+            font-size: 58px;}
+    50% { text-shadow: 5px 5px 10px rgb(60, 34, 34);  
+            font-size: 50px;}
+    75% { text-shadow: 5px 5px 10px rgb(206, 16, 16);
+            font-size: 58px;}
+    100% { text-shadow: 5px 5px 10px rgb(60, 34, 34);
+            font-size: 50px; }
+    }
+    header h1 {
+    animation-name: h1;
+    animation-duration: 4s;
+    animation-delay: -3s;
+    animation-iteration-count: infinite;
+    }
+}
+
+   /* -----------   laptop 900px - 1199px ------------ */
+
+@media screen and (min-width: 900px) {
+    .main {width: 880px; }
+    .header {
+        display: grid;
+    }
+    .header p {
+        justify-self: right;
+    }
+    .ul-container {
+        height: 270px;
+    }
+    .ul-ul {
+        width: 550px;
+        height: 265px;
+        transform: skew(-1deg, 1.5deg);
+    }
+    .ul-image {
+        justify-content: center;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+        height: 225px;
+    }
+    .ul-image img {
+        width: 350px;
+    }
+    .img-3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        padding-left:4px;
+        padding-right: 0px;
+        margin-right: 0px;
+    }
+    .img-3 img {
+        width: 280px;
+    }
+    .audio { 
+        padding-left: 300px;
+    }
+    iframe {
+        width: 650px;
+        height: 350px;
+        padding-left: 55%;
+    }
+
+    @keyframes h1 {
+    0% { text-shadow: 5px 5px 10px rgb(60, 34, 34);
+            font-size: 50px; }
+    25% { text-shadow: 5px 5px 10px rgb(206, 16, 16);
+            font-size: 58px;}
+    50% { text-shadow: 5px 5px 10px rgb(60, 34, 34);  
+            font-size: 50px;}
+    75% { text-shadow: 5px 5px 10px rgb(206, 16, 16);
+            font-size: 58px;}
+    100% { text-shadow: 5px 5px 10px rgb(60, 34, 34);
+            font-size: 50px; }
+    }
+    header h1 {
+    animation-name: h1;
+    animation-duration: 4s;
+    animation-delay: -3s;
+    animation-iteration-count: infinite;
+    }
+}
+
+   /* ---------  monitor 1200px -   ------------ */
+@media screen and  (min-width: 1200px) {
+    .main {width: 1200px; }
+    .header {
+        display: grid;
+    }
+    .header p {
+        justify-self: right;
+    }
+    .ul-container {display: flex;
+    }
+    .ul-ul { 
+        width: 750px;
+        height: 260px;
+        transform: skew(-2deg, 1deg);
+    }
+    .ul-image { 
+        width:400px;
+        justify-content: end;
+        margin-right: 40px;
+    }
+    .ul-image img { 
+        width: 450px ;
+        height: 235px;
+    }
+    .audio { 
+        padding-left: 400px;
+    }
+    .img-3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-left: 5px;
+    }
+    .img-3 img {
+        width: 370px;
+        height: 100%;
+    }
+    iframe {
+        width: 850px;
+        height: 400px;
+        padding-left: 50%;
+    }
+
+    @keyframes h1 {
+    0% { text-shadow: 5px 5px 10px rgb(60, 34, 34);
+            font-size: 50px; }
+    25% { text-shadow: 5px 5px 10px rgb(206, 16, 16);
+            font-size: 58px;}
+    50% { text-shadow: 5px 5px 10px rgb(60, 34, 34);  
+            font-size: 50px;}
+    75% { text-shadow: 5px 5px 10px rgb(206, 16, 16);
+            font-size: 58px;}
+    100% { text-shadow: 5px 5px 10px rgb(60, 34, 34);
+            font-size: 50px; }
+    }
+    header h1 {
+    animation-name: h1;
+    animation-duration: 4s;
+    animation-delay: -3s;
+    animation-iteration-count: infinite;
+    }
+}
