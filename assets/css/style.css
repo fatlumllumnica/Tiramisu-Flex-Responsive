@@ -103,7 +103,12 @@ p i {          /* ------ icons animations order edhe home ------- */
     }
 }
 
-
+img {
+    transition: all 0.3s;
+}
+img:hover {
+    transform: scale(1.1);
+}
 
 /* ---------------------   FORMS CSS   -------------------- */
 
