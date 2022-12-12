@@ -211,11 +211,10 @@ h1 { font-family: 'bakery-h';
         width: 200px;
         height: 370px;
         overflow: scroll;
-        padding-left: ;
     }
     .ul-image {
         margin-bottom: 0px;
-        justify-content:end;
+        justify-content: end;
         margin: auto;
         padding-bottom: 0px;
         padding-top: 370px;

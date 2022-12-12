@@ -2,7 +2,7 @@
 
 ### Rreth Detyrës
 
-Detyra në kuadër të këtij punimi është vënia në praktikë e njohurive të reja, të përvetësuara pas secilit sesion të përfuduar deri më tani në kuadër të Bootcamp.
+Detyra në kuadër të këtij punimi është vënia në praktikë e njohurive të reja, të përvetësuara pas secilit sesion të përfunduar deri më tani në kuadër të Bootcamp.
 
 ### Njohuritë e praktikuara deri më tani:
 
